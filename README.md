@@ -1,108 +1,141 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# LOVE MATHS
+## JAVASCRIPT WALK THROUGH PROJECT WITH CODE INSTITUTE
 
-Welcome ananejd,
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+The project is a maths game built using Javascript.
+The project allows a user to practice their mental maths skills.
 
-## Gitpod Reminders
+<hr>
+Find a live version <a href="http://ami.responsivedesign.is/?url=https://jd-agritrade.herokuapp.com/">here</a>
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
-`python3 -m http.server`
+## UX Design
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+##Scope
+A MVP (minimum viable product) includes:
 
-A blue button should appear to click: _Make Public_,
+- landing page displaying a picture of a lovely looking chick 
+- A search input area for looking for products
+- An Area for accessing your account or setting up one.
+- A basket button 
+- A library button acting as a dropdown menu for various categories of products
+- A shop now button that displays all products on offer.
 
-Another blue button should appear to click: _Open Browser_.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### User stories
 
-To log into the Heroku toolbelt CLI:
+**ID** | **As a/an** | **I want to be able to...** | **So that I can**
+--- | --- | --- | ---
+1 | Site User | Register to the site | Log in to my account 
+2 | Site User | Log In and Log Out | View my profile
+3 | Site User | Receive email confirmation | Confirm successful registration
+4 | Site User | Have a user profile | View my purchases, and be able to check my order history
+5 | Potential customer | View some products | Select to purchase
+6 | Potential customer | View details of products | See price and description
+7 | Potential customer | Pay for the products i like | Buy
+8 | Customer | View products in my bag | Check the cost to review
+9 | Customer | Enter payment information and see that process is secure | Checkout without issues
+11 | Administrator | Add new catergory of products | To make them visible to customer
+12 | Administrator | Edit or update various categories | To change a pric and/or description 
+13 | Administrator | Delete a category of products | To remove from a site
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+## Features
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+### home
 
-------
+The home page greets farmers with a picture of a beautiful chick with a SHOP NOW button. 
+The SHOP NOW button invites farmers to take a look at the various products on offer.
+Farmers are also informed of a delivery fee waiver over a specific amount.
+Various icons in the header helps summarize the various products the site offers to the visitor of the website.
 
-## Release History
+### SEARCH AREA 
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+the search area allows users of the website to directly search for their product of interest without combing through the site.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+### MY ACCOUNT
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+The MY ACCOUNT icon allows users to setup an account on the website or accessing their existing account on the website.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+### ALL PRODUCTS 
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+The ALL PRODUCTS icon when clicked on offers the site user a categorisation of the products on offer. 
+ie by pricing, rating and a view of all products.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+### POULTRY PRODUCTS 
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+This link allows the user of the website to assess specific poultry products being sold on the site.
+ie Eggs, Dressed Chicken, Live Birds and Point of lay chicks.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+### POULTRY FEED 
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+This links allows the users of the website to assess Poultry feeds sold on the website
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+### Basket
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+The basket button on the right side of the navigation bar is meant to hold a list of items 
+that have been reviewed by the site user awaiting payment.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+### Wireframes
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+- Home Page
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+    <details><summary>Desktop (click to view)</summary>
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+    ![](<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F9eOMIaCWLS6u7WBXtREDNX%2Fcraftstore%3Fnode-id%3D1%253A27" allowfullscreen></iframe>)
+    </details>
+    
+    
+    ![](static/images/Wireframe.png)
+    </details>
+## Technologies Used
 
-------
+- HTML5
+- CSS3
+- JavaScript
+- Python
+- Bootstrap
+- FontAwesome
+- Google Fonts
+- jQuery
+- Django
+- Git
+- Heroku
+- GitHub
+- AWS S3 bucket
 
-## FAQ about the uptime script
+## Database Schema
 
-**Why have you added this script?**
+Database contains 3 table:
+- user
+- categories
+- products
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+I use Django default databases SQLite in gitpod environment and PostgreSQL database with Heroku as production enviroment.
 
-**How will this affect me?**
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+### Security
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+All sensitive access keys are stored as `Config Vars` on Heroku cloud application platform.
+Django allauth was used to meet security requirements.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+## Deployment
+This project was built using Python 3.8.6 and Django3.2.4
+1. The project was deployed to Heroku with config vars:
+1. created requirements.txt that Heroku knows which packages are required for the application to run and install them.
+1. created Procfile that Heroku knows what kind of application this is.
+1. project eventually deployed at 
+<a href="https://jd-agritrade.herokuapp.com/">here</a>">
 
-**So….?**
+#### Challenges 
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+There was a difficulty in linking the database to the heroku app for which the developer continues to work on.
 
-**Can I opt out?**
+### project inspiration: 
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+1. inspiration for this project were largely drawn from video tutorials of the code institute on Full stack development with Django. 
+1. Appreciation goes to the code institute student support team for being very supportive throughout my period
+   study with the code institute
+1. Im grateful to my Alexander of the student care team at the code institute for his time and help throught this project 
